@@ -1,7 +1,12 @@
 @import url(reset.css);
 
+:root {
+    --blueMain: #1e3765;
+    --blueNav: #001e42;
+}
+
 header {
-    background-color: #1e3765;
+    background-color: var(--blueMain);
     color: white;
     width: 100%;
     height: 100%;
@@ -13,7 +18,7 @@ header {
 }
 
 nav {
-    background-color: #001e42;
+    background-color: var(--blueNav);
     color: white;
 }
 
