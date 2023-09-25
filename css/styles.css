@@ -20,6 +20,7 @@ header {
 nav {
     background-color: var(--blueNav);
     color: white;
+    box-shadow: 0px 5px 4px #555555;
 }
 
 nav ul {
@@ -43,4 +44,14 @@ nav ul a {
 
 nav ul li a:hover {
     background-color: lightblue;
+    color: black;
+}
+
+.spotlight-banner {
+    background-image: url(../img/University_College,_University_of_Toronto-1508040446.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    margin: 0.5em 0;
 }
