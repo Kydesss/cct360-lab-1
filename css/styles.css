@@ -55,3 +55,35 @@ nav ul li a:hover {
     height: 800px;
     margin: 0.5em 0;
 }
+
+.news-block {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-h1 {
+    background-color: var(--blueNav);
+    display: flex;
+    width: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box; 
+}
+
+.news-h2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1em 1em;
+    font-family: Gotham, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 100%;
+    font-size: 2em;
+    box-sizing: border-box;
+}
