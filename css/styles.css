@@ -1,20 +1,26 @@
 @import url(reset.css);
 
+:root {
+    --blueMain: #1e3765;
+    --blueNav: #001e42;
+}
+
 header {
-    background-color: #1e3765;
+    background-color: var(--blueMain);
     color: white;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 #logo {
     width: 13%;
-    padding: 1.75em
+    padding: 1.75em;
 }
 
 nav {
-    background-color: #001e42;
+    background-color: var(--blueNav);
     color: white;
+    box-shadow: 0px 5px 4px #555555;
 }
 
 nav ul {
@@ -26,7 +32,6 @@ nav ul li {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 1;
     font-size: 1em;
     display: inline;
 }
@@ -39,4 +44,46 @@ nav ul a {
 
 nav ul li a:hover {
     background-color: lightblue;
+    color: black;
+}
+
+.spotlight-banner {
+    background-image: url(../img/University_College,_University_of_Toronto-1508040446.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    margin: 0.5em 0;
+}
+
+.news-block {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-h1 {
+    background-color: var(--blueNav);
+    display: flex;
+    width: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box; 
+}
+
+.news-h2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1em 1em;
+    font-family: Gotham, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 100%;
+    font-size: 2em;
+    box-sizing: border-box;
 }
