@@ -3,7 +3,7 @@
 :root {
     --blueMain: #1e3765;
     --blueNav: #001e42;
-    --fontFamily: 'Gotham', Arial, Helvetica, sans-serif;
+    --fontFamily: 'Gotham', "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -98,19 +98,17 @@ nav ul li a:hover {
     display: flex;
     margin-top: 40px;
     align-items: stretch;
+    gap: 40px;
 }
 
 .latest-news, .upcoming-events {
     width: 50%;
 }
 
-.latest-news {
-    margin-right: 1em;
-}
 .updates h1 {
-    font-family: Gotham, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: var(--fontFamily);
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 2em;
     color: var(--blueMain)
 }
 
@@ -135,4 +133,22 @@ nav ul li a:hover {
     font-size: 1.25em;
     color: var(--blueMain);
     margin: 15px 0;
+}
+
+.cta-button {
+    margin: 40px 0;
+}
+
+.cta-button a {
+    background-color: #007fa3;
+    padding: 1em;
+    width: fit-content;
+    color: white;
+    font-family: var(--fontFamily);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.cta-button a:hover {
+    background-color: #004fa3;
 }
