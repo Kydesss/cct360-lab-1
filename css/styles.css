@@ -101,6 +101,14 @@ nav ul li a:hover {
     gap: 40px;
 }
 
+.updates a {
+    text-decoration: none;
+}
+
+.updates a h2:hover {
+    color: #485667;
+}
+
 .latest-news, .upcoming-events {
     width: 50%;
 }
@@ -165,12 +173,6 @@ footer {
     padding: 3em;
 }
 
-.motto img {
-    width: 3%;
-    padding: 0.5em;
-    filter: invert(100%);
-}
-
 .motto a {
     text-decoration: none;
     color: white;
@@ -185,33 +187,58 @@ footer {
 }
 
 .footer-links {
-    margin: 0 10%;
     padding: 2em 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: flex-start;
+    display: flex;
     border-bottom: 1px solid white;
 }
 
 .footer-links a {
     text-decoration: none;
     color: white;
-    display: flex;
-    padding: 0.5em 0;
+    display: block;
     font-family: var(--fontFamily);
+    font-weight: 100;
+}
+
+.footer-links-col {
+    display: inline;
+    width: 100%;
+}
+
+.footer-links-col a {
+    width: fit-content;
+    margin-bottom: 10%;
+}
+
+.footer-links-col a:hover {
+    text-decoration: underline;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #8DBF2E;
+    border-radius: 50%;
+    margin-right: 0.25em;
+    margin-bottom: 10%;
+}
+
+#campus-status {
+    display: flex;
+    align-items: center;
 }
 
 .land-acknowledgement {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 10%;
     padding: 3em 0;
 }
 
 .land-acknowledgement h3 {
     font-size: 1.5em;
     font-family: var(--fontFamily);
+    font-weight: bold;
     padding: 0.5em;
 }
 
@@ -228,8 +255,61 @@ footer {
     font-family: var(--fontFamily);
     font-weight: bold;
 }
+
+.land-acknowledgement a:hover {
+    text-decoration: underline;
+}
 .social-media-footer {
     background-color: var(--blueNav);
-    width: 100%;
-    height: 150px;
+    padding: 3em 0;
+}
+
+.social-media-directory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.social-media-directory a {
+    width: 35px;
+    height: 35px;
+    background-color: #007FA3;
+    border-radius: 100%;
+    margin: 0 1em;
+}
+
+.social-media-directory a:hover {
+    background-color: white;
+}
+
+
+.social-media-directory img {
+    width: 50%;
+    display: block;
+    margin: 9px auto;
+    filter: invert(100%);
+}
+
+.social-media-directory img:hover {
+    filter: invert(0%);
+}
+
+#social-media-directory-text {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    font-family: var(--fontFamily);
+}
+
+#social-media-directory-text:hover {
+    text-decoration: none;
+}
+
+.university-date {
+    text-align: center;
+    padding: 1em;
+    font-family: var(--fontFamily);
 }
