@@ -89,6 +89,70 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.updates {
+    display: flex;
+    margin-top: 40px;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.latest-news, .upcoming-events {
+    width: 50%;
+}
+
+.updates h1 {
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--blueMain)
+}
+
+.updates-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.updates-item img {
+    width: 100%
+}
+
+.updates-item p {
+    font-family: var(--fontFamily);
+    font-size: 0.85em;
+    color: #666;
+    margin: 15px 0;
+}
+
+.updates-item h2 {
+    font-family: var(--fontFamily);
+    font-size: 1.25em;
+    color: var(--blueMain);
+    margin: 15px 0;
+}
+
+.cta-button {
+    margin: 40px 0;
+}
+
+.cta-button a {
+    background-color: #007fa3;
+    padding: 1em;
+    width: fit-content;
+    color: white;
+    font-family: var(--fontFamily);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.cta-button a:hover {
+    background-color: #004fa3;
+}
+
 footer {
     background-color: var(--blueMain);
     color: white;
